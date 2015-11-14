@@ -13,7 +13,7 @@ a['commands'] = [
   apt-get update
   apt-get -y install wget curl git make
   wget https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
-  tar xvfz go1.5.1.linux-amd64.tar.gz -C /usr/local
+  tar xfz go1.5.1.linux-amd64.tar.gz -C /usr/local
   go get -d -u github.com/codahale/sneaker
   cd $GOPATH/src/github.com/codahale/sneaker
   for os in linux darwin; do
