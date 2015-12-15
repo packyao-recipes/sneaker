@@ -30,7 +30,8 @@ a['env'] = {
 }
 a['outputs'] = %w(deb rpm tar)
 a['package_files'] = {
-  '/root/go/bin/sneaker' => '/usr/local/bin/sneaker'
+  '/root/go/bin/sneaker' => '/usr/local/bin/sneaker',
+  '/root/go/bin/darwin_amd64/sneaker' => '/tmp/osx/sneaker'
 }
 a['build_distro'] = 'ubuntu'
 a['build_distro_version'] = '14.04'

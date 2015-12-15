@@ -22,7 +22,8 @@
     "tar"
   ],
   "package_files": {
-    "/root/go/bin/sneaker": "/usr/local/bin/sneaker"
+    "/root/go/bin/sneaker": "/usr/local/bin/sneaker",
+    "/root/go/bin/darwin_amd64/sneaker": "/tmp/osx/sneaker"
   },
   "build_distro": "ubuntu",
   "build_distro_version": "14.04"
