@@ -28,7 +28,7 @@ a['env'] = {
   'GOPATH' => '${HOME}/go',
   'PATH' => '$PATH:$GOROOT/bin'
 }
-a['outputs'] = %w(deb rpm)
+a['outputs'] = %w(deb rpm tar)
 a['package_files'] = {
   '/root/go/bin/sneaker' => '/usr/local/bin/sneaker'
 }
