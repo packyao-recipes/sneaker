@@ -18,7 +18,8 @@
   },
   "outputs": [
     "deb",
-    "rpm"
+    "rpm",
+    "tar"
   ],
   "package_files": {
     "/root/go/bin/sneaker": "/usr/local/bin/sneaker"
