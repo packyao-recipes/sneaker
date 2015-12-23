@@ -29,9 +29,12 @@ a['env'] = {
   'PATH' => '$PATH:$GOROOT/bin'
 }
 a['outputs'] = %w(deb rpm tar)
+linux_bin = {'/root/go/bin/sneaker' => '/usr/local/bin/sneaker'}
+osx_bin = {'/root/go/bin/darwin_amd64/sneaker' => '/tmp/osx/sneaker'}
 a['package_files'] = {
-  '/root/go/bin/sneaker' => '/usr/local/bin/sneaker',
-  '/root/go/bin/darwin_amd64/sneaker' => '/tmp/osx/sneaker'
+  'deb' => linux_bin,
+  'rpm' => linux_bin,
+  'tar' => linux_bin.merge(osx_bin)
 }
 a['build_distro'] = 'ubuntu'
 a['build_distro_version'] = '14.04'

@@ -5,7 +5,7 @@
   "type": "git",
   "license": "Apache",
   "commands": [
-    "  apt-get update\n  apt-get -y install wget curl git make\n  wget https://storage.googleapis.com/golang/go1.5.2.linux-amd64.tar.gz\n  tar xfz go1.5.2.linux-amd64.tar.gz -C /usr/local\n  go get -d -u github.com/codahale/sneaker\n  cd $GOPATH/src/github.com/codahale/sneaker\n  for os in linux darwin; do\n    GOOS=$os make install\n  done\n"
+    "  apt-get update\n  apt-get -y install wget curl git make\n  wget -nv https://storage.googleapis.com/golang/go1.5.2.linux-amd64.tar.gz\n  tar xfz go1.5.2.linux-amd64.tar.gz -C /usr/local\n  go get -d -u github.com/codahale/sneaker\n  cd $GOPATH/src/github.com/codahale/sneaker\n  for os in linux darwin; do\n    GOOS=$os make install\n  done\n"
   ],
   "depends": [
 
@@ -22,8 +22,16 @@
     "tar"
   ],
   "package_files": {
-    "/root/go/bin/sneaker": "/usr/local/bin/sneaker",
-    "/root/go/bin/darwin_amd64/sneaker": "/tmp/osx/sneaker"
+    "deb": {
+      "/root/go/bin/sneaker": "/usr/local/bin/sneaker"
+    },
+    "rpm": {
+      "/root/go/bin/sneaker": "/usr/local/bin/sneaker"
+    },
+    "tar": {
+      "/root/go/bin/sneaker": "/usr/local/bin/sneaker",
+      "/root/go/bin/darwin_amd64/sneaker": "/tmp/osx/sneaker"
+    }
   },
   "build_distro": "ubuntu",
   "build_distro_version": "14.04"
