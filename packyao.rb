@@ -5,8 +5,6 @@ version = '0.0.1'
 a = {}
 a['name'] = 'sneaker'
 a['version'] = version
-a['source'] = 'https://github.com/codahale/sneaker.git'
-a['type'] = 'git'
 a['license'] = 'Apache'
 a['commands'] = [
   <<-EOF
