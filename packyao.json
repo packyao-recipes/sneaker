@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "Apache",
   "commands": [
-    "  apt-get update\n  apt-get -y install wget curl git make\n  wget -nv https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz\n  tar xfz go1.4.2.linux-amd64.tar.gz -C /usr/local\n  go get -d -u github.com/codahale/sneaker\n  cd $GOPATH/src/github.com/codahale/sneaker\n  for os in linux darwin; do\n    GOOS=$os make install\n  done\n"
+    "  apt-get update\n  apt-get -y install wget curl git make\n  wget -nv https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz\n  tar xfz go1.5.1.linux-amd64.tar.gz -C /usr/local\n  go get -d -u github.com/codahale/sneaker\n  cd $GOPATH/src/github.com/codahale/sneaker\n  for os in linux darwin; do\n    GOOS=$os make install\n  done\n"
   ],
   "depends": [
 
