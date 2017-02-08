@@ -7,7 +7,7 @@ a['name'] = 'sneaker'
 a['version'] = version
 a['license'] = 'Apache'
 a['commands'] = [
-  <<-EOF
+  <<~EOF
   apt-get update
   apt-get -y install wget curl git make
   wget -nv https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz
