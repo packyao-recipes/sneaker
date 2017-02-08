@@ -12,8 +12,8 @@ a['commands'] = [
   apt-get -y install wget curl git make
   wget -nv https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz
   tar xfz go1.6.2.linux-amd64.tar.gz -C /usr/local
-  go get -d -u github.com/jietang/sneaker
-  cd $GOPATH/src/github.com/jietang/sneaker
+  go get -d -u github.com/codahale/sneaker
+  cd $GOPATH/src/github.com/codahale/sneaker
   for os in linux darwin; do
     GOOS=$os make install
   done
