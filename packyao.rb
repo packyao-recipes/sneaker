@@ -17,7 +17,7 @@ a['commands'] = [
   go get -d -u github.com/codahale/sneaker
   cd $GOPATH/src/github.com/codahale/sneaker
   for os in linux darwin; do
-    GOOS=$os make install
+    GOOS=$os CGO_ENABLED=0 make install
   done
   EOF
 ]
